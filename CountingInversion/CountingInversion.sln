@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountingInversion", "CountingInversion\CountingInversion.csproj", "{CEE02580-7B2F-471F-BFE5-9CC7713C226E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InversionTests", "InversionTests\InversionTests.csproj", "{4956D397-25A7-4E76-BD71-9AF8EF0A6251}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEE02580-7B2F-471F-BFE5-9CC7713C226E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE02580-7B2F-471F-BFE5-9CC7713C226E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE02580-7B2F-471F-BFE5-9CC7713C226E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE02580-7B2F-471F-BFE5-9CC7713C226E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4956D397-25A7-4E76-BD71-9AF8EF0A6251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4956D397-25A7-4E76-BD71-9AF8EF0A6251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4956D397-25A7-4E76-BD71-9AF8EF0A6251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4956D397-25A7-4E76-BD71-9AF8EF0A6251}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

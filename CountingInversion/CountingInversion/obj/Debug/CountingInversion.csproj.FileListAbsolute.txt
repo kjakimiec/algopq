@@ -1,0 +1,6 @@
+c:\work\algo\pq1\CountingInversion\CountingInversion\bin\Debug\CountingInversion.exe.config
+c:\work\algo\pq1\CountingInversion\CountingInversion\bin\Debug\CountingInversion.exe
+c:\work\algo\pq1\CountingInversion\CountingInversion\bin\Debug\CountingInversion.pdb
+c:\work\algo\pq1\CountingInversion\CountingInversion\obj\Debug\CountingInversion.csprojResolveAssemblyReference.cache
+c:\work\algo\pq1\CountingInversion\CountingInversion\obj\Debug\CountingInversion.exe
+c:\work\algo\pq1\CountingInversion\CountingInversion\obj\Debug\CountingInversion.pdb

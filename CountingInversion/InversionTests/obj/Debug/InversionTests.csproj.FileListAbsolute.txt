@@ -1,0 +1,7 @@
+c:\work\algo\pq1\CountingInversion\InversionTests\obj\Debug\InversionTests.csprojResolveAssemblyReference.cache
+c:\work\algo\pq1\CountingInversion\InversionTests\bin\Debug\InversionTests.dll
+c:\work\algo\pq1\CountingInversion\InversionTests\bin\Debug\InversionTests.pdb
+c:\work\algo\pq1\CountingInversion\InversionTests\bin\Debug\CountingInversion.exe
+c:\work\algo\pq1\CountingInversion\InversionTests\bin\Debug\CountingInversion.pdb
+c:\work\algo\pq1\CountingInversion\InversionTests\obj\Debug\InversionTests.dll
+c:\work\algo\pq1\CountingInversion\InversionTests\obj\Debug\InversionTests.pdb
