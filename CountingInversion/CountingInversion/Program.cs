@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,14 @@ namespace CountingInversion
     {
         static void Main(string[] args)
         {
-            var file = new FileReader();
-            file.ReadToArray("numbers.txt");
-            file.ListArray();
+            //var file = new FileReader();
+            //file.ReadToArray("numbers.txt");
+            //file.ListArray();
+            var array = new ArrayList() {6,5,4,3,2,1};
+            var inv = new Inversion();
+            var sor = inv.CountInversion(array);
+            int a = inv.inversionCount;
+            Console.WriteLine(a);
         }
     }
 
@@ -20,21 +26,59 @@ namespace CountingInversion
 
     public class Inversion
     {
+        public int inversionCount = 0;
         public int GetSplitPLace(int size)
         {
             return (int)(size / 2);
         }
 
-        public int CountInversion(IList<int> source,int from, int to)
+        public ArrayList CountInversion(ArrayList source)
         {
-            var split = GetSplitPLace(to-from);
-            var left = CountInversion(source, 0, split);
-            var right = CountInversion(source, split, to);
-            var splited = CountSplited();
-            return left+right+splited;
+            if (source.Count == 1)
+            {
+                return source;
+            }
+            var split = (int) (source.Count/2); //GetSplitPLace(to - from);
+            ArrayList leftArray = source.GetRange(0, split);
+            ArrayList rightArray = source.GetRange(split, source.Count - split);
+            ArrayList arrSortedInt = new ArrayList();
+            leftArray = CountInversion(leftArray);
+            rightArray = CountInversion(rightArray);
+            int leftptr = 0;
+            int rightptr = 0;
+            for (int i = 0; i < leftArray.Count + rightArray.Count; i++)
+            {
+                if (leftptr == leftArray.Count)
+                {
+                    arrSortedInt.Add(rightArray[rightptr]);
+                    rightptr++;
+                }
+                else if (rightptr == rightArray.Count)
+                {
+
+                    inversionCount += 1;
+                    arrSortedInt.Add(leftArray[leftptr]);
+                    leftptr++;
+                }
+                else if ((int)leftArray[leftptr] < (int)rightArray[rightptr])
+                {
+                   
+                    //need the cast above since arraylist returns Type object
+                    arrSortedInt.Add(leftArray[leftptr]);
+                    leftptr++;
+                }
+                else
+                {
+                    inversionCount += 1;
+                    arrSortedInt.Add(rightArray[rightptr]);
+                    rightptr++;
+                }
+            }
+            //var splited = CountSplited(leftArray,rightArray);
+            return arrSortedInt;
         }
 
-        private int CountSplited()
+        private int CountSplited(ArrayList left, ArrayList right)
         {
             throw new NotImplementedException();
         }
